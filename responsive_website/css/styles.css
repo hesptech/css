@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.clearfix::after,
+section::after,
+footer::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+/* typography 
+=================== */
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.title-divider-1 {
+    width: 8rem;
+    color: #fff;
+    border-width: 0;
+    height: 2px;
+    background-color: #fff;
+}
+
+.subtitle {
+    font-style: italic;
+    font-weight: 400;
+    font-family: auto;
+}
+
+.title span {
+    font-weight: 300;
+    display: block;
+    font-size: 0.4em;
+    font-style: italic;
+}
+
+@media (min-width:55em) {
+    .title {
+        font-size: 3.7rem;
+    }
+}
+
+.unstyled-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+/* buttons 
+=================== */
+.button {
+    display: inline-block;
+    font-size: 1.15rem;
+    text-decoration: none;
+    padding: .5em 1.75em;
+}
+
+.button-accent {
+    color: #fff;
+    background-color: #000;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background-color: #333;
+}
+
+.gallery-titles {
+    font-size: .6rem;
+} 
+
+@media (min-width: 60em) {
+    .button {
+        font-size: 1.15rem;
+    }
+}
+
+
+
+/* header 
+=================== */
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1em;
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1em;
+}
+
+nav li {
+    display: inline-block;
+    /* margin: 1em; */
+}
+
+nav a {
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: .5rem;
+    color: #fff
+}
+
+nav a:hover,
+nav a:focus {
+    color: #ddd;
+}
+
+.nav-ul-center {
+    font-size: 1.5rem;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+header .icon {
+    display: none;
+}
+
+.nav-ul-hamburger {
+    display: none;
+}
+
+
+@media (min-width:60rem) {
+    .nav-ul-left {
+        float: left;
+    }
+
+    .nav-ul-right {
+        float: right;
+        padding-left: 15em;
+    }
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    nav ul {display: none;}
+    
+    header {
+        background: #000;
+        margin: 0;
+        padding: 1em;
+        opacity: 0.7;
+    }
+    
+    header a.icon {
+      float: right;
+      display: block;
+      color: #fff;
+      font-size: 2rem;
+    }
+    nav li {
+        display: flex;
+        /* margin: 1em; */
+    }
+    .nav-ul-hamburger {
+        display: flow-root;
+        text-align: left;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.5em;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ddd;
+    }
+    
+    .responsive {
+        display: none;
+    }
+}
+
+
+/* home 
+=================== */
+.home {
+    background-image: url(../img/living_room_1920x800.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    color: #fff;
+}
+
+@media (min-width: 60em) {
+    .home {
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+
+
+/* portfolio-1
+=================== */
+.portfolio-1 {
+    /* margin: 3em 0; */
+    background: #F2F2F4;
+}
+
+.portfolio-divider-1 {
+    width: 9rem;
+    color: #000;
+    border-width: 0;
+    height: 2px;
+    background-color: #000;
+}
+
+.portfolio-subtitle-1 {
+    color: #777;
+    font-weight: 600;
+}
+
+.port-item-1 {
+	margin: 1.4em .5em;
+	/* position: relative; */
+}
+
+
+@media (min-width: 37rem) {
+    .port-item-1 {
+        width: 30%;
+        display: inline-block;
+    }
+}
+
+/* portfolio 
+=================== */
+
+.portfolio {
+    padding: 3em 0;
+    background: #F2F2F4;
+}
+
+.port-item {
+	margin: .5em;
+	position: relative;
+}
+
+.port-desc {
+
+}
+
+.port-desc p {
+
+}
+
+.portfolio img {
+    box-shadow: 0 0 1em 0 rgba(0,0,0,.3);
+}
+
+@media (min-width: 37rem) {
+    .port-item {
+        width: 30%;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 75rem) {
+    .port-item {
+        width: 15%;
+        display: inline-block;
+    }
+}
+
+
+/* portfolio-3 
+=================== */
+.portfolio-3 {
+    padding: 3em 0;
+}
+
+.port_desc-3 {
+    text-align: left;
+    margin: 0 20%;
+}
+
+.port-item-date {
+    color: #777;
+}
+
+.port-item-title-3 {
+    font-weight: 700;
+}
+
+.port-item-paragraph {
+    color: #666;
+    padding-top: .8em;
+}
+
+.portfolio-3-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* footer  
+=================== */
+footer {
+    background: #f6f6f8;
+    color: #666;
+    text-align: left;
+    padding: 5em 0;
+}
+
+footer li {
+    font-size: .9rem;
+    line-height: 2em;
+}
+
+.footer-titles {
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 1.5em;
+}
+
+.footer-supertitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 1.5em;
+}
+
+.footer-container {
+    width: 70%;
+    margin: 0 17%;
+}
+
+
+
+/* Column system  
+=================== */
+[class^=col-] {
+    width: 100%;
+    margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+    margin-top: 0;
+}
+
+
+
+@media (min-width: 40rem) {
+    [class^=col-] {
+        float: left;
+        padding: 0 .5em;
+        margin-top: 0;
+    }
+ 
+    [class^=col-]:first-child {
+        padding-left: 0;
+    }
+    
+    [class^=col-]:last-child {
+        padding-right: 0;
+    }
+
+    .col-2 {
+        width: 25%;
+    }
+    
+    .col-1 {
+        width: 16%;
+    }
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

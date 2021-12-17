@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+p:before {
+    content: 'hello';
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    display: block;
+    /* display: block;
+    width: 10px;
+    height: 10px; */
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+p:after {
+    content: 'goodbye';
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    display: block;
+    /* display: block;
+    width: 10px;
+    height: 10px; */
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+.intro::before {
+    content: url(//unsplash.it/100/100);
+}
