@@ -1,0 +1,23 @@
+.Section.custom-html {
+  padding: 0;
+}
+
+.shopify-section--bordered>.Section--spacingNormal.custom-html {
+  padding: 0;
+}
+
+.shopify-section--bordered+.shopify-section--bordered {
+    border: 0;
+}
+
+
+.shopify-section:first-child > [data-section-type='image-with-text-overlay'] .ImageHero {
+    min-height: calculateRem(420px);
+
+    @include respond-to(tablet) {
+        min-height: calculateRem(240px);
+    }
+    @include respond-to(phone) {
+        min-height: calculateRem(120px);
+    }
+}
